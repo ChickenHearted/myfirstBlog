@@ -1,0 +1,134 @@
+body {
+	background-image: url("https://www.planwallpaper.com/static/images/6968796-desktop-wallpaper-backgrounds-1080p.jpg");
+	font-family: 'Poiret One', cursive;
+}
+.wrapper {
+	word-wrap: break-word;
+	background-color: rgba(214, 214, 216, 0.3);
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #ffffff;
+  margin-top: 2em;
+  width: 80%;
+  max-width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+}
+.wrapper_erstellen{
+	word-wrap: break-word;
+	background-color: rgba(214, 214, 216, 0.3);
+	font-size: 1.5em;
+	color: #ffffff;
+  width: 80%;
+  max-width: 600px;
+	margin: 3% auto;
+	font-weight: bold;
+	padding: 1px 10px;
+}
+.wrapper_kommentieren{
+	word-wrap: break-word;
+	background-color: rgba(214, 214, 216, 0.3);
+	font-size: 1.5em;
+	color: #ffffff;
+  width: 80%;
+  max-width: 600px;
+	margin: 3% auto;
+	font-weight: bold;
+	padding: 1px 10px;
+}
+#blog {
+	overflow: hidden;
+	color: black;
+}
+#kommentar {
+	overflow: hidden;
+	color: black;
+}
+#name {
+	color: black;
+}
+#benutzer {
+	color: black;
+}
+#kommentare {
+	margin-left: 30%;
+}
+#kollegen li {
+	list-style: none;
+}
+fieldset {
+  margin-top: 2em;
+}
+h1 {
+	font-size: 5em;
+	color: #ffffff;
+	font-weight: bold;
+	margin: 3% auto;
+	text-align: center;
+}
+h2 {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.form-blog {
+	margin-bottom: 2%;
+	font-size: 1.2em;
+}
+.blog {
+	float: left;
+	width: 60%;
+}
+.form-blog label {
+	font-weight: bold;
+	display: block;
+}
+.form-blog input,
+.form-blog textarea {
+	width: 100%;
+}
+.form-actions {
+  padding-top: 1em;
+  border-top: 1px solid;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.navigation {
+	padding: 2px;
+	float: left;
+	font-size: 1.2em;
+}
+a {
+	color: #ffffff;
+}
+p {
+	padding-left: 12%;
+}
+.hr_strich {
+	height: 1px;
+	width: 100%;
+	background-color: #ffffff;
+}
+.errors {
+	background: #fff3f3;
+	color: #f00;
+	border: 1px solid red;
+	padding-top: 15px;
+	border-radius: 4px;
+	padding-left: 30px;
+}
+.eingabe {
+	font-weight: bold;
+}
+textarea {
+	height: 10em;
+	resize: none;
+	overflow: auto;
+}

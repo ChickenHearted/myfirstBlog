@@ -28,13 +28,24 @@ body {
 .wrapper_kommentieren{
 	word-wrap: break-word;
 	background-color: rgba(214, 214, 216, 0.3);
+	font-size: 1.4em;
+	color: #ffffff;
+  width: 80%;
+  max-width: 600px;
+	margin: 3% auto;
+	font-weight: bold;
+	padding: 2% 1%;
+}
+.wrapper_anmelden{
+	word-wrap: break-word;
+	background-color: rgba(214, 214, 216, 0.3);
 	font-size: 1.5em;
 	color: #ffffff;
   width: 80%;
   max-width: 600px;
 	margin: 3% auto;
 	font-weight: bold;
-	padding: 1px 10px;
+	padding: 1%;
 }
 #blog {
 	overflow: hidden;
@@ -50,11 +61,19 @@ body {
 #benutzer {
 	color: black;
 }
-#kommentare {
-	margin-left: 30%;
+#login_name {
+	color: black;
+}
+#password {
+	color: black;
 }
 #kollegen li {
 	list-style: none;
+}
+#anmelden {
+	font-size: 1.2em;
+	text-align: center;
+	margin-right: 10%;
 }
 fieldset {
   margin-top: 2em;
@@ -75,7 +94,7 @@ h3 {
 	font-weight: bold;
 }
 h4 {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	font-weight: bold;
 }
 .form-blog {
@@ -131,4 +150,7 @@ textarea {
 	height: 10em;
 	resize: none;
 	overflow: auto;
+}
+button {
+	margin: 0 1%;
 }

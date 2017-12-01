@@ -46,6 +46,4 @@ if (empty($errors) && !empty($benutzername) && !empty($blog)) {
   $stmt = '';
   $dbh = new PDO('mysql:host=localhost;dbname=bloggers','root' ,'');
   $stmt = $dbh->query("INSERT INTO `eintraege` (username, blog, date, time) VALUES ('$benutzername','$blog', curdate(), curtime())");
-}
-
-// $stmt = $dbh->query('SELECT * FROM `eintraege` ORDER BY id DESC');
+} ?>

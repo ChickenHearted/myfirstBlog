@@ -2,7 +2,7 @@
   include 'models/kommentieren.model.php';
 ?>
 <div class="wrapper_kommentieren">
-  <form action="index.php?page=kommentieren" method="POST">
+  <form action="index.php?page=kommentieren&eintragid=<?= $eintragId; ?>" method="POST">
      <fieldset>
       <h3>Ihr Kommentar</h3>
       <div class="form-blog">
@@ -13,7 +13,6 @@
         <label for="kommentar">Kommentar</label>
         <textarea id="kommentar" name="kommentar"></textarea>
       </div>
-      <h3>zu ↴ </h3>
     </fieldset>
     <?php
     if (!empty($errors)) { ?>
@@ -29,7 +28,7 @@
     <div class="form-actions">
       <input class="btn btn-primary" type="submit" value="Speichern">
       <input class="btn btn-primary" type="reset" value="Zurücksetzen">
-      <a class="btn btn-primary" href="index.php?page=kommentare">alle Kommentare</a>
+      <a class="btn btn-primary" href="index.php?page=kommentare&eintragid=<?= $eintragId; ?>">alle Kommentare</a>
       <a class="btn btn-primary" href="index.php">Home</a>
       <?php
       foreach($eingabe as $ausgabe) {

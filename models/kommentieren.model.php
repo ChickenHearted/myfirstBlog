@@ -6,8 +6,9 @@ $kommentar_eingabe = [];
 $kommentar = '';
 $benutzer = '';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+$eintragId = $_GET["eintragid"] ?? '';
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $datum = date("Y.m.d");
   $uhrzeit = date("H:i");
 
@@ -36,13 +37,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       array_push($errors, "Ihr Kommentar enthält keine Leerzeichen, dies dient zum Schutz for Spam.");
     }
   }
+
+  $kommentar = strip_tags($kommentar, '<img><a><br>');
+
+  if (empty($errors)) {
+    $stmt = '';
+    $dbh = new PDO('mysql:host=localhost;dbname=bloggers','root' ,'');
+    $stmt = $dbh->query("INSERT INTO kommentare (comment, commenter_name, creation_date, creation_time, eintrag_id) VALUES ('$kommentar', '$benutzer', curdate(), curtime(), $eintragId)");
+  }
 }
 
-$kommentar = strip_tags($kommentar, '<img><a><br>');
 
-if (empty($errors) && !empty($benutzername) && !empty($blog)) {
-  $stmt = '';
-  $dbh = new PDO('mysql:host=localhost;dbname=bloggers','root' ,'');
-  $stmt = $dbh->query("INSERT INTO kommentare (comment, commenter_name, creation_date, creation_time, eintrag_id) VALUES ('$benutzer', '$kommentar', curdate(), curtime()), '$eintragId'");
-}
 ?>

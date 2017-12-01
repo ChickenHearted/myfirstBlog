@@ -31,7 +31,7 @@
                   echo '→ Durchschnittsbewertung = Medium';
                 if($x["AvgRating"] >=4 && $x["AvgRating"] < 5)
                   echo '→ Durchschnittsbewertung = Good';
-                if($x["AvgRating"] == 5 || $x["AvgRating"] > 4.6)
+                if($x["AvgRating"] == 5 || $x["AvgRating"] > 4.8)
                   echo '→ Durchschnittsbewertung = Godlike';
                   } else {
                     echo 'Seien Sie der erste der bewertet! :C';

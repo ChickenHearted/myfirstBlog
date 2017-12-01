@@ -1,5 +1,5 @@
 <div class="navigation">
-  <p><a href="index.php?page=erstellen">⇨ Blog erstellen ⇦</a></p>
+  <p><a href="index.php?page=erstellen&eintragid=<?= $x["id"]; ?>">⇨ Blog erstellen ⇦</a></p>
   <?php
   include 'models/navigation.model.php';
   ?>

@@ -2,6 +2,10 @@
   include 'models/erstellen.model.php';
 ?>
 <div class="wrapper_erstellen">
+
+  <?php
+  $isLoggedIn = true;
+  if ($isLoggedIn)  { ?>
   <form action="index.php?page=erstellen" method="POST">
      <fieldset>
       <h3>Neuer Blog erstellen</h3>
@@ -42,6 +46,9 @@
         }
       echo $blog;
        ?>
+     <?php } else {
+       include 'views/anmelden.view.php';
+     } ?>
     </div>
   </form>
 </div>

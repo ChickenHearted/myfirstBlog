@@ -1,7 +1,6 @@
 <h1>Willkommen auf Carolina's Blogger-Seite</h1>
 <div class="wrapper">
   <form action="index.php" method="POST">
-    <p id="anmelden"><a href="index.php?page=anmelden">⇨ Anmelden ⇦</a></p>
     <fieldset>
      <div class="blog">
        <h2>Unsere Blog-Einträge:</h2>

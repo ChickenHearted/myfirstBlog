@@ -1,6 +1,8 @@
 <?php
 $errors = [];
 
+$eintragId = $_GET["eintragid"] ?? '';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   $login_name = $_POST["login_name"] ?? '';
@@ -22,6 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (empty($errors) && !empty($login_name) && !empty($passwort)) {
     $stmt = '';
     $dbh = new PDO('mysql:host=localhost;dbname=bloggers','root' ,'');
-    $stmt = $dbh->query("INSERT INTO `eintraege` (login_username, password) VALUES ('$login_name','$passwort')");
+    $stmt = $dbh->query("INSERT INTO `angemeldete` (login_username, password, eintrag_id) VALUES ('$login_name','$passwort', $eintragId)");
   }
-} ?>
+} ?> 

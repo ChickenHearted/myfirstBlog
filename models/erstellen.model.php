@@ -24,7 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     array_push($eingabe_benutzer, "Benutzername: ");
   }
 
-  $blog = trim($_POST["blog"]);
   $blog = nl2br($blog);
 
   if (empty($blog)) {

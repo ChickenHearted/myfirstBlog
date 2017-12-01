@@ -1,8 +1,7 @@
 <?php
   include 'models/anmelden.model.php';
 ?>
-<div class="wrapper_anmelden">
-  <form action="index.php?page=anmelden" method="POST">
+  <form action="index.php?page=erstellen" method="POST">
     <fieldset>
       <h3>Anmelden</h3>
       <div class="form-blog">
@@ -31,4 +30,3 @@
       <a class="btn btn-primary" href="index.php">Home</a>
     </div>
   </form>
-</div>
